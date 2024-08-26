@@ -1,8 +1,7 @@
-
 const BCCR = require('./index');
 
-const email = 'YOUR_EMAIL';
-const token = 'YOUR_TOKEN';
+const email = 'it@symphonycr.com';
+const token = '0YPCO112CC';
 
 BCCR(email, token).then((data) => {
     console.log("Compra y Venta del día de hoy:");
