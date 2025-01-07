@@ -1,6 +1,6 @@
 {
   "name": "bccr-exchange-rates",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Get the exchange rate from Banco Central de Costa Rica (BCCR)",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "author": "Josue Orozco A.<jdavidoa91@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@xmldom/xmldom": "^0.8.10",
-    "axios": "1.6.2"
+    "@xmldom/xmldom": "^0.9.6",
+    "axios": "1.7.9"
   },
   "repository": "https://github.com/NaturalDevCR/bccr-exchange-rates"
 }
