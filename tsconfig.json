@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Strict Type-Checking */
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* Output */
+    "outDir": "./dist",
+    "declaration": true, // Genera los archivos .d.ts
+    "declarationMap": true,
+    "sourceMap": true,
+
+    /* Project Structure */
+    "rootDir": "./",
+    "include": ["lib/**/*.ts", "index.ts"]
+  }
+}

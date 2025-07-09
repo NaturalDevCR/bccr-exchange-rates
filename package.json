@@ -1,26 +1,52 @@
 {
   "name": "bccr-exchange-rates",
-  "version": "1.0.11",
-  "description": "Get the exchange rate from Banco Central de Costa Rica (BCCR)",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "A modern, reliable, TypeScript-based client to get the daily exchange rate from Banco Central de Costa Rica (BCCR).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "test": "node test.js"
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "example": "tsx examples/get-rates.ts",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "\"indicadores",
-    "economicos\"",
-    "\"BCCR\"",
-    "\"colones\"",
-    "\"dolares\"",
-    "\"compra\"",
-    "\"venta\"",
-    "\"tipo de cambio\""
+    "bccr",
+    "banco central",
+    "costa rica",
+    "tipo de cambio",
+    "exchange rate",
+    "typescript"
   ],
   "author": "Josue Orozco A.<jdavidoa91@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@xmldom/xmldom": "^0.9.6",
-    "axios": "1.7.9"
+    "axios": "^1.7.9"
   },
-  "repository": "https://github.com/NaturalDevCR/bccr-exchange-rates"
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NaturalDevCR/bccr-exchange-rates.git"
+  },
+  "files": [
+    "dist/"
+  ]
 }
