@@ -1,6 +1,6 @@
 {
   "name": "bccr-exchange-rates",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "description": "A modern, reliable, TypeScript-based client to get the daily exchange rate from Banco Central de Costa Rica (BCCR).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

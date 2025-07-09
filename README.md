@@ -23,11 +23,6 @@ This package is fully typed, providing an excellent developer experience with au
 
     npm install bccr-exchange-rates
 
-## Requirements
-
--   Node.js v18 or higher.
--   You must enroll in the [BCCR Web Service](https://www.bccr.fi.cr/seccion-indicadores-economicos/servicio-web) to get a valid email and token.
-
 
 ## Usage
 
